@@ -38,9 +38,7 @@
 </head>
 <body>
     <div id="content">
-        <a href="http://signup.fanzo.co"><img src="images/watchsite.png" width="750" height="480"></img></a>
-        <h1>Welcome to Fanzo</h1>
-        <h3><a href="http://signup.fanzo.co">Sign up to get involved!</a></h3>
+    	<a href="authTwitter.php"><img src="images/twitterSignIn.png" width="450" height="72"/></a>    	
     </div>
 </body>
 </html>
