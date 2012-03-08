@@ -1,3 +1,35 @@
+<?php
+
+require_once('utils.php');
+require_once('sdks/twitter/tmhOAuth.php');
+require_once('sdks/twitter/tmhUtilities.php');
+
+$here = tmhUtilities::php_self( );
+$tmhOAuth = new tmhOAuth( array( 'consumer_key' => '66L5OnWNiQX8ziw0ABBnJg', 
+								 'consumer_secret' => 'dSyFNwpJzBCpVOrNjT5BCJpbAU1K26xygHEac8Gscc', ) );
+session_start( );
+
+if (isAlreadyLoggedIn())
+{
+	$tmhOAuth->config[ 'user_token' ] = $_SESSION[ 'access_token' ][ 'oauth_token' ];
+	$tmhOAuth->config[ 'user_secret' ] = $_SESSION[ 'access_token' ][ 'oauth_token_secret' ];
+
+	$code = $tmhOAuth->request( 'GET', $tmhOAuth->url( '1/account/verify_credentials' ) );
+	if ( $code == 200 )
+	{
+		$user = json_decode( $tmhOAuth->response[ 'response' ] );
+	}
+	else
+	{
+		outputError( $tmhOAuth );
+	}
+}
+else 
+{
+	header("Location: /index2.php");
+}
+
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
@@ -7,7 +39,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-<link href="css/global.css" rel="stylesheet">
+<link href="css/gamePick.css" rel="stylesheet">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -41,8 +73,9 @@
 </script>
 </head>
 <body>
-	<h1>Hudd.ly</h1>
+	<h1>FANZO</h1>
 	<h3>Never watch the game alone</h3>
+	<h4>Welcome, <strong><?php echo he($user->name); ?></strong></h4>
 	<form class="form-vertical" style="width: 300px; padding: 10px">
 		<div class="control-group">
 			<label class="control-label" for="gamePicker">Pick a game to join the conversation:</label> <select id="gamePicker"

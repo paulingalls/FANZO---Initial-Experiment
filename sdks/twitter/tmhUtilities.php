@@ -1,4 +1,13 @@
 <?php
+
+
+function outputError( $tmhOAuth )
+{
+	echo 'Error: ' . $tmhOAuth->response[ 'response' ] . PHP_EOL;
+	tmhUtilities::pr( $tmhOAuth );
+}
+
+
 /**
  * tmhUtilities
  *

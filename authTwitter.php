@@ -1,7 +1,8 @@
 <?php
 
-require 'sdks/twitter/tmhOAuth.php';
-require 'sdks/twitter/tmhUtilities.php';
+require_once('utils.php');
+require_once('sdks/twitter/tmhOAuth.php');
+require_once('sdks/twitter/tmhUtilities.php');
 
 $here = tmhUtilities::php_self( );
 $tmhOAuth = new tmhOAuth( array( 'consumer_key' => '66L5OnWNiQX8ziw0ABBnJg', 
@@ -9,22 +10,10 @@ $tmhOAuth = new tmhOAuth( array( 'consumer_key' => '66L5OnWNiQX8ziw0ABBnJg',
 
 session_start( );
 
-function outputError( $tmhOAuth )
-{
-	echo 'Error: ' . $tmhOAuth->response[ 'response' ] . PHP_EOL;
-	tmhUtilities::pr( $tmhOAuth );
-}
-
 function isLogout()
 {
 	return isset( $_REQUEST[ 'wipe' ] );
 }
-
-function isAlreadyLoggedIn()
-{
-	return isset( $_SESSION[ 'access_token' ] );
-}
-
 function isTwitterCallback()
 {
 	return isset( $_REQUEST[ 'oauth_verifier' ] );
