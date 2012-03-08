@@ -45,6 +45,7 @@ body, #holder
 {
 	clear: both;
 	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .tweetMenu > a

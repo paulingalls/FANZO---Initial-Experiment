@@ -53,7 +53,7 @@ var myTweetHash = {
     "goDefense" : [
             "Shut it down!  They got N O T H I N G!",
             "Now that is defense, baby.  Bring the stop!",
-            "That zone is as tight as my boss's ass!"
+            "That zone is as tight!"
     ],
     "goOffense" : [
             "Shoot that!  You know you feeling it!",
@@ -71,7 +71,7 @@ function parseQueryString( aSearchString )
 {
     mySearchTerm = unescape( aSearchString.split( "=" )[1] );
     myHashTags = mySearchTerm;
-    myHashTags = myHashTags.replace( "OR", "" );
+    myHashTags = myHashTags.replace( /OR/gi, "" );
 }
 
 function getLatestTweetsForTerm( aSearchTerm )
@@ -104,13 +104,16 @@ function onSearchComplete( aJSON )
 
 function addTweet( i, aTweet )
 {
+	var theNewDivSelector = "#" + aTweet.id_str;
     if ( myRefreshUrl )
     {
-        $( "#tweets" ).prepend( getTweetMarkup( aTweet ) ).fadeIn( 800 ).slideDown( 1000, onAddComplete );
+        $( "#tweets" ).prepend( getTweetMarkup( aTweet ) );
+        $(theNewDivSelector).slideDown( 600, onAddComplete );
     }
     else
     {
         $( "#tweets" ).append( getTweetMarkup( aTweet ) );
+        $(theNewDivSelector).slideDown(200);
     }
 }
 
@@ -118,7 +121,7 @@ function getTweetMarkup( aTweet )
 {
     var theTweetDate = new Date( aTweet.created_at );
 
-    return "<div class='tweet well'><img src='"
+    return "<div id='" + aTweet.id_str + "' class='tweet well' style='display:none'><img src='"
            + aTweet.profile_image_url
            + "' style='float:left' width='48px' height='48px'></img> <strong>"
            + aTweet.from_user
@@ -128,16 +131,19 @@ function getTweetMarkup( aTweet )
            + theTweetDate.toDateString()
            + " "
            + theTweetDate.toLocaleTimeString()
-           + "</div><a href=\"https://twitter.com/intent/tweet?in_reply_to="
+           + "</div><a href=\"javascript:replyTo('"
            + aTweet.id_str
-           + "\"><img src='img/reply.png'></img>Reply</a>"
-           + "| <a href=\"https://twitter.com/intent/retweet?tweet_id="
+           + "')\"><img src='img/reply.png'></img>Reply</a>"
+           + "| <a href=\"javascript:retweet('"
            + aTweet.id_str
-           + "\"><img src='img/retweet.png'></img>Retweet</a>"
-           + "| <a href=\"https://twitter.com/intent/favorite?tweet_id="
+           + "')\"><img src='img/retweet.png'></img>Retweet</a>"
+           + "| <a href=\"javascript:favorite('"
            + aTweet.id_str
-           + "\"><img src='img/favorite.png'></img>Favorite</a>"
-           + "</div></div>";
+           + "')\"><img src='img/favorite.png'></img>Favorite</a>"
+           + "</div><div class='alert alert-error fade in' style='display:none'>"
+           + "<a class='close' data-dismiss='alert' href='#'>×</a><p id='" 
+           + aTweet.id_str 
+           + "_alertText'><strong>Success!</strong></p></div></div>";
 }
 
 function onAddComplete()
@@ -159,7 +165,7 @@ function getTweetUrl( aDefaultText )
 function addTweetClick( i, anAnchorElement )
 {
     var theTweetText = myTweetHash[anAnchorElement.id][0];
-    anAnchorElement.href = getTweetUrl( theTweetText );
+    anAnchorElement.href = "#";
     $( anAnchorElement ).click( tweetClick );
 }
 
@@ -167,6 +173,51 @@ function tweetClick( e )
 {
     var theRandomIndex = Math.floor( Math.random()
                                      * myTweetHash[e.target.id].length );
-    var theTweetText = myTweetHash[e.target.id][theRandomIndex];
-    e.target.href = getTweetUrl( theTweetText );
+    var theTweetText = myTweetHash[e.target.id][theRandomIndex] + " " + myHashTags;
+	//$.post("twitterProxy.php", {command:"tweet", data : theTweetText }, onTweetComplete, "json");	
 }
+
+function replyTo( aTweetId )
+{
+//	$.post("twitterProxy.php", {command:"tweet", id : aTweetId }, onReplyTo, "json");	
+	console.log("replyTo:" + aTweetId);
+}
+
+function retweet( aTweetId )
+{
+	//$.post("twitterProxy.php", {command:"retweet", id : aTweetId }, onRetweetComplete, "json");	
+	onRetweetComplete({retweeted_status:{id_str: aTweetId}});
+}
+
+function favorite( aTweetId )
+{
+	//$.post("twitterProxy.php", {command:"favorite", id : aTweetId }, onFavoriteComplete, "json");	
+	onFavoriteComplete({id_str: aTweetId});
+}
+
+function showAlertWithHtml( anId, anHtml)
+{
+	var theAlertSelector = "#" + anId + " div.alert";
+	$(theAlertSelector).slideDown(600);
+	setTimeout(function(){$(theAlertSelector).slideUp(600);}, 5000);
+	
+	var theTextSelector = "#" + anId + "_alertText";
+	$(theTextSelector).html( anHtml );
+}
+
+function onRetweetComplete(aResponse)
+{
+	if (aResponse)
+	{
+		showAlertWithHtml( aResponse.retweeted_status.id_str, "<strong>Success!</strong><br/>Your retweet succeeded");
+	}
+}
+
+function onFavoriteComplete( aResponse )
+{
+	if (aResponse)
+	{
+		showAlertWithHtml( aResponse.id_str, "<strong>Success!</strong><br/>You added a Favorite");
+	}
+}
+
