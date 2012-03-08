@@ -26,19 +26,7 @@ if ( isLogout() )
 }
 elseif ( isAlreadyLoggedIn() )
 {
-	$tmhOAuth->config[ 'user_token' ] = $_SESSION[ 'access_token' ][ 'oauth_token' ];
-	$tmhOAuth->config[ 'user_secret' ] = $_SESSION[ 'access_token' ][ 'oauth_token_secret' ];
-
-	$code = $tmhOAuth->request( 'GET', $tmhOAuth->url( '1/account/verify_credentials' ) );
-	if ( $code == 200 )
-	{
-		$resp = json_decode( $tmhOAuth->response[ 'response' ] );
-		echo $resp->screen_name;
-	}
-	else
-	{
-		outputError( $tmhOAuth );
-	}
+	header("Location: gamePick.php");
 }
 elseif ( isTwitterCallback() )
 {

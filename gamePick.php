@@ -81,16 +81,9 @@ else
 			<label class="control-label" for="gamePicker">Pick a game to join the conversation:</label> <select id="gamePicker"
 				style="width: 300px">
 				<option value="none">Pick from this list</option>
-				<option value="#spartans OR #msu OR #huskers">Michigan State v. Nebraska</option>
-				<option value="#ku OR #kansas OR #missouri">KU v. Missouri</option>
-				<option value="#syracuse OR #orange OR #uconn">Syracuse v. Connecticut</option>
-				<option value="#badgers OR #osu OR #buckeyes">Wisconsin v. Ohio State</option>
-				<option value="#nd OR #irish OR #hoyas OR #georgetown">Notre Dame v. Georgetown</option>
-				<option value="#chelsea OR #bolton">Chelsea v. Bolton</option>
-				<option value="#arsenal OR #tottenham OR #spurs">Arsenal v. Tottenham Hospurs (Spurs)</option>
-				<option value="#manu OR #manchester OR #norwich">Manchester United v. Norwich</option>
-				<option value="#england OR #holland">England v. Holland</option>
-				<option value="#usa OR #italy">USA v. Italy</option>
+				<option value="#ndmbb OR #usf OR #ND">Notre Dame v. USF</option>
+				<option value="#louisville OR #marquette">Louisville v. Marquette</option>
+				<option value="#huskies OR #uw OR #ost OR #beavers">Syracuse v. Connecticut</option>
 			</select>
 		</div>
 	</form>

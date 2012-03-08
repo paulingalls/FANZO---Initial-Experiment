@@ -8,7 +8,7 @@ var myTweetHash = {
     "blindRef" : [
             "Damn, that ref is blind as a bat",
             "Open your eyes ref, or do you have any?",
-            "How can you not see that foul? There is so much blood it looks like a bomb went off in the paint!"
+            "How can you not see that foul?"
     ],
     "foul" : [
             "That is what you call a foul ref! Have you forgotten what that is?",
@@ -175,6 +175,7 @@ function tweetClick( e )
                                      * myTweetHash[e.target.id].length );
     var theTweetText = myTweetHash[e.target.id][theRandomIndex] + " " + myHashTags;
 	//$.post("twitterProxy.php", {command:"tweet", data : theTweetText }, onTweetComplete, "json");	
+	console.log("")
 }
 
 function replyTo( aTweetId )
@@ -185,14 +186,14 @@ function replyTo( aTweetId )
 
 function retweet( aTweetId )
 {
-	//$.post("twitterProxy.php", {command:"retweet", id : aTweetId }, onRetweetComplete, "json");	
-	onRetweetComplete({retweeted_status:{id_str: aTweetId}});
+	$.post("twitterProxy.php", {command:"retweet", id : aTweetId }, onRetweetComplete, "json");	
+	//onRetweetComplete({retweeted_status:{id_str: aTweetId}});
 }
 
 function favorite( aTweetId )
 {
-	//$.post("twitterProxy.php", {command:"favorite", id : aTweetId }, onFavoriteComplete, "json");	
-	onFavoriteComplete({id_str: aTweetId});
+	$.post("twitterProxy.php", {command:"favorite", id : aTweetId }, onFavoriteComplete, "json");	
+	//onFavoriteComplete({id_str: aTweetId});
 }
 
 function showAlertWithHtml( anId, anHtml)
