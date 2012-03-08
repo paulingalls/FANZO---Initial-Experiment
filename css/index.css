@@ -1,0 +1,58 @@
+@CHARSET "UTF-8";
+
+body, #holder
+{
+	width: 320px;
+	height: 436px;
+}
+
+#buttonHolder
+{
+	margin: 10px 0px;
+	height: 40px;
+}
+
+#tweetHolder
+{
+	position: relative;
+}
+
+.tweetStarterBtn a
+{
+	float:left;
+	width: 120px;
+	margin: 5px;
+}
+
+.tweet
+{
+	width: 270px;
+	margin: 5px;
+}
+
+.timestamp
+{
+	color: gray;
+	margin: 5px 0px;	
+}
+
+.tweet > img
+{
+	margin-right: 10px;
+}
+
+.tweetMenu
+{
+	clear: both;
+	margin-top: 5px;
+}
+
+.tweetMenu > a
+{
+	padding: 5px 10px;
+}
+
+.modal-body .btn
+{
+	margin: 5px 3px;
+}

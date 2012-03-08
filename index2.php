@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Fanzo - Never Watch the Game Alone</title>
-<link rel="stylesheet" href="stylesheets/base.css" />
+<link rel="stylesheet" href="css/base.css" />
 <style>
 	body
 	{
@@ -38,7 +38,7 @@
 </head>
 <body>
     <div id="content">
-    	<a href="authTwitter.php"><img src="images/twitterSignIn.png" width="450" height="72"/></a>    	
+    	<a href="authTwitter.php"><img src="img/twitterSignIn.png" width="450" height="72"/></a>    	
     </div>
 </body>
 </html>

@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+
+body
+{
+	width: 320px;
+	height: 436px;
+}
+
+h1
+{
+	color: blue;
+	text-align:center;
+	margin-top: 80px;
+}
+
+h3
+{
+	color: red;
+	text-align: center;	
+}
+
