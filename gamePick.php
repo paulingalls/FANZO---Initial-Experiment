@@ -83,7 +83,7 @@ else
 				<option value="none">Pick from this list</option>
 				<option value="#ndmbb OR #usf OR #ND">Notre Dame v. USF</option>
 				<option value="#louisville OR #marquette">Louisville v. Marquette</option>
-				<option value="#huskies OR #uw OR #ost OR #beavers">Syracuse v. Connecticut</option>
+				<option value="#huskies OR #uw OR #ost OR #beavers">Washington v. Oregon State</option>
 			</select>
 		</div>
 	</form>
