@@ -173,7 +173,7 @@ function addTweetClick( i, anAnchorElement )
 
 function showTweetDialog( aDefaultText )
 {
-    $("#tweetText").html(aDefaultText);
+    $("#tweetText").val(aDefaultText);
     $(".modal").modal("hide");
     $("#myTweetModal").modal("show"); 
 }
