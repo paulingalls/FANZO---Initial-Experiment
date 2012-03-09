@@ -26,7 +26,15 @@ if ( isAlreadyLoggedIn( ) )
 			break;
 
 		default:
-			$code = $tmhOAuth->request( 'POST', $tmhOAuth->url( '1/statuses/update' ), array( 'status' => $_REQUEST[ 'data' ] ) );
+			if ($_REQUEST[ 'reply_id' ])
+			{
+				$postData = array('status' => $_REQUEST['data'], 'in_reply_t_status_id');
+			}
+			else
+			{
+				$postData = array( 'status' => $_REQUEST[ 'data' ] );
+			}
+			$code = $tmhOAuth->request( 'POST', $tmhOAuth->url( '1/statuses/update' ), $postData );
 			break;
 	}
 

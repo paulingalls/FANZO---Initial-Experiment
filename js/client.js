@@ -124,7 +124,7 @@ function getTweetMarkup( aTweet )
     return "<div id='" + aTweet.id_str + "' class='tweet well' style='display:none'><img src='"
            + aTweet.profile_image_url
            + "' style='float:left' width='48px' height='48px'></img> <strong>"
-           + aTweet.from_user
+           + aTweet.from_user_name
            + ": </strong>"
            + aTweet.text
            + "<div class='tweetMenu'><div class='timestamp'>"
@@ -133,6 +133,8 @@ function getTweetMarkup( aTweet )
            + theTweetDate.toLocaleTimeString()
            + "</div><a href=\"javascript:replyTo('"
            + aTweet.id_str
+           + "', '@" 
+           + aTweet.from_user 
            + "')\"><img src='img/reply.png'></img>Reply</a>"
            + "| <a href=\"javascript:retweet('"
            + aTweet.id_str
@@ -169,16 +171,21 @@ function addTweetClick( i, anAnchorElement )
     $( anAnchorElement ).click( tweetClick );
 }
 
+function showTweetDialog( aDefaultText )
+{
+    $("#tweetText").html(aDefaultText);
+    $(".modal").modal("hide");
+    $("#myTweetModal").modal("show"); 
+}
+
 function tweetClick( e )
 {
     var theRandomIndex = Math.floor( Math.random()
                                      * myTweetHash[e.target.id].length );
     var theTweetText = myTweetHash[e.target.id][theRandomIndex] + " " + myHashTags;
-    $("#tweetText").html(theTweetText);
 
-    $(".modal").modal("hide");
-    
-    $("#myTweetModal").modal("show"); 
+	showTweetDialog(theTweetText);
+	    
     $("#sendTweetButton").click(onSendTweet);
 }
 
@@ -189,10 +196,18 @@ function onSendTweet( e )
 	$("#myTweetModal").modal("hide");	
 }
 
-function replyTo( aTweetId )
+function onReply( e )
 {
-//	$.post("twitterProxy.php", {command:"tweet", id : aTweetId }, onReplyTo, "json");	
-	console.log("replyTo:" + aTweetId);
+	var theReplyId = $("#sendTweetButton").attr("reply_id");
+	var theTweetText = $("#tweetText").val();
+	$.post("twitterProxy.php", {command:"tweet", data : theTweetText, reply_id : theReplyId }, onTweetComplete, "json");	
+	console.log("replyTo:" + theReplyId);
+}
+
+function replyTo( aTweetId, aUser )
+{
+	showTweetDialog(aUser + " " + myHashTags);
+    $("#sendTweetButton").click(onReply).attr("reply_id", aTweetId);
 }
 
 function retweet( aTweetId )
