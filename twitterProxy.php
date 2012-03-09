@@ -26,7 +26,7 @@ if ( isAlreadyLoggedIn( ) )
 			break;
 
 		default:
-			$code = $tmhOAuth->request( 'POST', $tmhOAuth->url( '1/statuses/update.json' ), array( 'status' => $_REQUEST[ 'data' ] ) );
+			$code = $tmhOAuth->request( 'POST', $tmhOAuth->url( '1/statuses/update' ), array( 'status' => $_REQUEST[ 'data' ] ) );
 			break;
 	}
 

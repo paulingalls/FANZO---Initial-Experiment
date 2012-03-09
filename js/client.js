@@ -140,7 +140,7 @@ function getTweetMarkup( aTweet )
            + "| <a href=\"javascript:favorite('"
            + aTweet.id_str
            + "')\"><img src='img/favorite.png'></img>Favorite</a>"
-           + "</div><div class='alert alert-error fade in' style='display:none'>"
+           + "</div><div class='alert alert-info fade in' style='display:none'>"
            + "<a class='close' data-dismiss='alert' href='#'>×</a><p id='" 
            + aTweet.id_str 
            + "_alertText'><strong>Success!</strong></p></div></div>";
@@ -174,8 +174,21 @@ function tweetClick( e )
     var theRandomIndex = Math.floor( Math.random()
                                      * myTweetHash[e.target.id].length );
     var theTweetText = myTweetHash[e.target.id][theRandomIndex] + " " + myHashTags;
-	//$.post("twitterProxy.php", {command:"tweet", data : theTweetText }, onTweetComplete, "json");	
-	console.log("")
+    $("#tweetText").html(theTweetText);
+
+    $(".modal").modal("hide");
+    
+    $("#myTweetModal").modal("show"); 
+    $("#sendTweetButton").click(onSendTweet);
+}
+
+function onSendTweet( e )
+{
+	var theTweetText = $("#tweetText").html();
+	console.log(theTweetText);
+	
+	$.post("twitterProxy.php", {command:"tweet", data : theTweetText }, onTweetComplete, "json");
+	$("#myTweetModal").modal("hide");	
 }
 
 function replyTo( aTweetId )
@@ -187,13 +200,11 @@ function replyTo( aTweetId )
 function retweet( aTweetId )
 {
 	$.post("twitterProxy.php", {command:"retweet", id : aTweetId }, onRetweetComplete, "json");	
-	//onRetweetComplete({retweeted_status:{id_str: aTweetId}});
 }
 
 function favorite( aTweetId )
 {
 	$.post("twitterProxy.php", {command:"favorite", id : aTweetId }, onFavoriteComplete, "json");	
-	//onFavoriteComplete({id_str: aTweetId});
 }
 
 function showAlertWithHtml( anId, anHtml)
@@ -204,6 +215,11 @@ function showAlertWithHtml( anId, anHtml)
 	
 	var theTextSelector = "#" + anId + "_alertText";
 	$(theTextSelector).html( anHtml );
+}
+
+function onTweetComplete(aResponse)
+{
+	console.log(aResponse);
 }
 
 function onRetweetComplete(aResponse)

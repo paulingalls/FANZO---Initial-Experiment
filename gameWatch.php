@@ -104,6 +104,19 @@ else
 					<a href="#" class="btn" data-dismiss="modal">Cancel</a>
 				</div>
 			</div>
+			
+			<div id="myTweetModal" class="modal hide fade" style="display: none;">
+				<div class="modal-header">
+					<a class="close" data-dismiss="modal">×</a>
+					<h3>Personalize your tweet:</h3>
+				</div>
+				<div class="modal-body">
+					<textarea class="input-xlarge" id="tweetText" rows="3"></textarea>
+				</div>
+				<div class="modal-footer">
+					<a id="sendTweetButton" href="#" class="btn" data-dismiss="modal">Send</a>
+				</div>
+			</div>
 					
 			<div class="tweetStarterBtn">
 				<a data-toggle="modal" href="#myHappyModal" id="happyButton" class="btn btn-large btn-primary">Booyah!!!</a>
