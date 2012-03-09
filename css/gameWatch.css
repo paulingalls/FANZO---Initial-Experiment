@@ -17,6 +17,11 @@ body, #holder
 	position: relative;
 }
 
+#tweetSuccessAlert
+{
+	margin:5px;
+}
+
 .tweetStarterBtn a
 {
 	float:left;

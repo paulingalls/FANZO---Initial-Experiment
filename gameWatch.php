@@ -125,6 +125,9 @@ else
 				<a data-toggle="modal" href="#mySadModal" id="sadButton" class="btn btn-large btn-danger">What?!?!</a>
 			</div>
 		</div>
+		<div id="tweetSuccessAlert" class='alert alert-info fade in' style='display:none'>
+			<a class='close' data-dismiss='alert' href='#'>×</a><p><strong>Success!</strong> Your status was updated</p>
+		</div>
 		<div id="tweetHolder">
 			<div id="tweets"></div>
 		</div>

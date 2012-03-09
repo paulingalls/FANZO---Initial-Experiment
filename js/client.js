@@ -232,7 +232,8 @@ function showAlertWithHtml( anId, anHtml)
 
 function onTweetComplete(aResponse)
 {
-	console.log(aResponse);
+	$("#tweetSuccessAlert").slideDown(600);
+	setTimeout(function(){$("#tweetSuccessAlert").slideUp(600);}, 5000);
 }
 
 function onRetweetComplete(aResponse)
