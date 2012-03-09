@@ -87,8 +87,9 @@ else
 				<option value="#mizzou OR #missouri OR #texas OR #horns OR #big12">Texas v. Missouri</option>
 				<option value="#osu OR #beavers OR #arizona OR #wildcats OR #pac12">Oregon St. v. Arizona</option>
 				<option value="#cal OR #calbears OR #colorado OR #buffs OR #pac12">California v. Colorado</option>
-				<option value="#lsu OR #tigers OR #weareuk OR #uk OR #sec">LSU v. Kentucky</option>
 				<option value="#florida OR #gators OR #Alabama OR #tide OR #sec">Florida v. Alabama</option>
+				<option value="#vtu OR #hokies OR #duke OR #bluedevils OR #acc">Duke v. Virginia Tech.</option>
+				<option value="#miami OR #canes OR #fsu OR #noles OR #acc">Miami(FL) v. Florida State</option>
 			</select>
 		</div>
 	</form>
