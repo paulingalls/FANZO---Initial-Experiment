@@ -184,9 +184,7 @@ function tweetClick( e )
 
 function onSendTweet( e )
 {
-	var theTweetText = $("#tweetText").html();
-	console.log(theTweetText);
-	
+	var theTweetText = $("#tweetText").val();
 	$.post("twitterProxy.php", {command:"tweet", data : theTweetText }, onTweetComplete, "json");
 	$("#myTweetModal").modal("hide");	
 }
