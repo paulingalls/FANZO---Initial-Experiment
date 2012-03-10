@@ -49,7 +49,7 @@ else
         parseQueryString(window.location.search);
         initializeButtons();
         getLatestTweetsForTerm( mySearchTerm );
-        window.setInterval(function(){grabMoreTweets();}, 2000);
+        window.setInterval(function(){grabMoreTweets();}, 5000);
     } );
 </script>
 <script type="text/javascript">
