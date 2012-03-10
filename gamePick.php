@@ -82,7 +82,7 @@ else
 				style="width: 300px">
 				<option value="none">Pick from this list</option>
 				<option value="#ndmbb OR #goirish OR #nd OR #cardinals OR #louisville OR #bigeast">Notre Dame v. Louisville</option>
-				<option value="#syracuse OR #cincinnati OR #orange OR #bearcats OR #bigeast">Louisville v. Marquette</option>
+				<option value="#syracuse OR #cincinnati OR #orange OR #bearcats OR #bigeast">Syracuse v. Cincinnati</option>
 				<option value="#kansas OR #jayhawks OR #baylor OR #bears OR #big12">Baylor v. Kansas</option>
 				<option value="#mizzou OR #missouri OR #texas OR #horns OR #big12">Texas v. Missouri</option>
 				<option value="#osu OR #beavers OR #arizona OR #wildcats OR #pac12">Oregon St. v. Arizona</option>
