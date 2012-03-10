@@ -129,6 +129,9 @@ else
 		<div id="tweetSuccessAlert" class='alert alert-info fade in' style='display:none'>
 			<a class='close' data-dismiss='alert' href='#'>×</a><p><strong>Success!</strong> Your status was updated</p>
 		</div>
+		<div id="newTweets" class='alert alert-info fade in' style='display:none'>
+			<a class='close' data-dismiss='alert' href='#'>×</a><p><strong>5</strong> new Tweets!</p>
+		</div>
 		<div id="tweetHolder">
 			<div id="tweets"></div>
 		</div>

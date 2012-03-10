@@ -22,6 +22,14 @@ body, #holder
 	margin:5px;
 }
 
+#newTweets
+{
+	margin:5px;
+	text-align: center;
+	cursor: pointer;
+}
+
+
 .tweetStarterBtn a
 {
 	float:left;

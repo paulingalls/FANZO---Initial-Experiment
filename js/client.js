@@ -1,6 +1,7 @@
 var mySearchTerm;
 var myHashTags;
 var myRefreshUrl;
+var myNewTweets = new Array();
 
 var SEARCH_URL = "http://search.twitter.com/search.json";
 
@@ -95,6 +96,11 @@ function onSearchComplete( aJSON )
             window.scrollTo( 0, 1 );
         }
         myRefreshUrl = aJSON.refresh_url;
+        
+        if (myNewTweets.length > 1)
+        {
+        	showNewTweetsAlert();
+        }
     }
     else
     {
@@ -102,13 +108,33 @@ function onSearchComplete( aJSON )
     }
 }
 
+function showNewTweetsAlert()
+{
+	$("#newTweets > p").html("<strong>" + myNewTweets.length + "</strong> new Tweets!");
+	$("#newTweets").slideDown(600).click( showNewTweets );
+
+}
+
+function showNewTweets()
+{
+	$("#newTweets").slideUp(600);
+	$.each(myNewTweets, showTweet);
+	myNewTweets = new Array();
+}
+
+function showTweet( i, aTweet )
+{
+	var theNewDivSelector = "#" + aTweet.id_str;
+    $( "#tweets" ).prepend( getTweetMarkup( aTweet ) );
+    $(theNewDivSelector).slideDown(200);
+}
+
 function addTweet( i, aTweet )
 {
 	var theNewDivSelector = "#" + aTweet.id_str;
     if ( myRefreshUrl )
     {
-        $( "#tweets" ).prepend( getTweetMarkup( aTweet ) );
-        $(theNewDivSelector).slideDown( 600, onAddComplete );
+    	myNewTweets.push(aTweet);
     }
     else
     {
