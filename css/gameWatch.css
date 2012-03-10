@@ -15,6 +15,8 @@ body, #holder
 #tweetHolder
 {
 	position: relative;
+	height: 380px;
+	overflow: auto;
 }
 
 #tweetSuccessAlert
@@ -39,7 +41,6 @@ body, #holder
 
 .tweet
 {
-	width: 270px;
 	margin: 5px;
 }
 

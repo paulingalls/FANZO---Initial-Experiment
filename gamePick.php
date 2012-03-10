@@ -81,15 +81,13 @@ else
 			<label class="control-label" for="gamePicker">Pick a game to join the conversation:</label> <select id="gamePicker"
 				style="width: 300px">
 				<option value="none">Pick from this list</option>
-				<option value="#ndmbb OR #goirish OR #nd OR #cardinals OR #louisville OR #bigeast">Notre Dame v. Louisville</option>
-				<option value="#syracuse OR #cincinnati OR #orange OR #bearcats OR #bigeast">Syracuse v. Cincinnati</option>
-				<option value="#kansas OR #jayhawks OR #baylor OR #bears OR #big12">Baylor v. Kansas</option>
-				<option value="#mizzou OR #missouri OR #texas OR #horns OR #big12">Texas v. Missouri</option>
-				<option value="#osu OR #beavers OR #arizona OR #wildcats OR #pac12">Oregon St. v. Arizona</option>
-				<option value="#cal OR #calbears OR #colorado OR #buffs OR #pac12">California v. Colorado</option>
-				<option value="#florida OR #gators OR #Alabama OR #tide OR #sec">Florida v. Alabama</option>
-				<option value="#vtu OR #hokies OR #duke OR #bluedevils OR #acc">Duke v. Virginia Tech.</option>
-				<option value="#miami OR #canes OR #fsu OR #noles OR #acc">Miami(FL) v. Florida State</option>
+				<option value="#gators OR #florida OR #uk OR #kentucky">Florida v. Kentucky</option>
+				<option value="#ncst OR #wolfpack OR #unc OR #tarheels">NC State v. North Carolina</option>
+				<option value="#mizzou OR #missouri OR #baylor OR #bears OR #big12">Baylor v. Missouri</option>
+				<option value="#duke OR #bluedevils OR #fsu OR #noles OR #acc">Duke v. Florida State</option>
+				<option value="#osu OR #buckeyes OR #michigan OR #wolverines OR #big10">Ohio State v. Michigan</option>
+				<option value="#wisconsin OR #badgers OR #msu OR #spartans OR #big10">Wisconsin v. Michigan State</option>				
+				<option value="#louisville OR #cards OR #cincinnati OR #bearcats OR #bigeast">Louisville v. Cincinnati</option>
 			</select>
 		</div>
 	</form>
