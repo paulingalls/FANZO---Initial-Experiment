@@ -126,7 +126,7 @@ function showTweet( i, aTweet )
 {
 	var theNewDivSelector = "#" + aTweet.id_str;
     $( "#tweets" ).prepend( getTweetMarkup( aTweet ) );
-    $(theNewDivSelector).slideDown(200);
+    $(theNewDivSelector).slideDown(600, onAddComplete);
 }
 
 function addTweet( i, aTweet )
