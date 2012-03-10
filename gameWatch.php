@@ -22,6 +22,7 @@ if (isAlreadyLoggedIn())
 	else
 	{
 		outputError( $tmhOAuth );
+		header("Location: /index2.php");
 	}
 }
 else 

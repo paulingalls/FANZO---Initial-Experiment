@@ -1,3 +1,20 @@
+<?php
+
+require_once('utils.php');
+require_once('sdks/twitter/tmhOAuth.php');
+require_once('sdks/twitter/tmhUtilities.php');
+
+$here = tmhUtilities::php_self( );
+$tmhOAuth = new tmhOAuth( array( 'consumer_key' => '66L5OnWNiQX8ziw0ABBnJg', 
+								 'consumer_secret' => 'dSyFNwpJzBCpVOrNjT5BCJpbAU1K26xygHEac8Gscc', ) );
+session_start( );
+
+if (isAlreadyLoggedIn())
+{
+	header("Location: /gamePick.php");
+}
+
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
