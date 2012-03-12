@@ -81,13 +81,11 @@ else
 			<label class="control-label" for="gamePicker">Pick a game to join the conversation:</label> <select id="gamePicker"
 				style="width: 300px">
 				<option value="none">Pick from this list</option>
-				<option value="#gators OR #florida OR #uk OR #kentucky">Florida v. Kentucky</option>
-				<option value="#ncst OR #wolfpack OR #unc OR #tarheels">NC State v. North Carolina</option>
-				<option value="#mizzou OR #missouri OR #baylor OR #bears OR #big12">Baylor v. Missouri</option>
-				<option value="#duke OR #bluedevils OR #fsu OR #noles OR #acc">Duke v. Florida State</option>
-				<option value="#osu OR #buckeyes OR #michigan OR #wolverines OR #big10">Ohio State v. Michigan</option>
-				<option value="#wisconsin OR #badgers OR #msu OR #spartans OR #big10">Wisconsin v. Michigan State</option>				
-				<option value="#louisville OR #cards OR #cincinnati OR #bearcats OR #bigeast">Louisville v. Cincinnati</option>
+				<option value="#MVSU OR #deltadevils OR #WKU OR #hilltoppers">MVSU v. WKU</option>
+				<option value="#BYU OR #cougars OR #Iona OR #gaels">BYU v. Iona</option>
+				<option value="#LAM OR #Lamar OR #UVM OR #vermont OR #catamounts">LAM v. UVM</option>
+				<option value="#Cal OR #goldenbears OR #USF OR #bulls">Cal v. USF</option>
+				<option value="#sounders OR 'Seattle Sounders' OR #Torreón">Seattle Sounders v. Torreón, Mexico</option>				
 			</select>
 		</div>
 	</form>
