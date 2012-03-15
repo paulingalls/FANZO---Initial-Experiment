@@ -80,12 +80,26 @@ else
 		<div class="control-group">
 			<label class="control-label" for="gamePicker">Pick a game to join the conversation:</label> <select id="gamePicker"
 				style="width: 300px">
-				<option value="none">Pick from this list</option>
-				<option value="#MVSU OR #deltadevils OR #WKU OR #hilltoppers">MVSU v. WKU</option>
-				<option value="#BYU OR #cougars OR #iona OR #gaels">BYU v. Iona</option>
-				<option value="#LAM OR #Lamar OR #UVM OR #vermont OR #catamounts">LAM v. UVM</option>
-				<option value="#Cal OR #goldenbears OR #USF OR #bulls">Cal v. USF</option>
-				<option value="#sounders OR 'Seattle Sounders' OR #Torreón">Seattle Sounders v. Torreón, Mexico</option>				
+				<option value="none">Pick from this list for 3/15</option>
+				<option value="none">----South----</option>
+				<option value="#UK OR #Kentucky OR #WKU OR #hilltoppers">Kentucky v. Western Kentucky</option>
+				<option value="#ISU OR #cyclones OR #uconn OR #connecticut">Iowa State v. Connecticut</option>
+				<option value="#Wichita OR #shockers OR #VCU OR #rams">Wichita State v. VCU</option>
+				<option value="#IU OR #hoosiers OR #NMSU OR #aggies">Indiana v. New Mexico State</option>
+				<option value="#UNLV OR #rebels OR #Colorado OR #Buffaloes">UNLV v. Colorado</option>
+				<option value="#Baylor OR #bears OR #SDST OR #Jackrabbits">Baylor v. South Dakota State</option>
+				<option value="none">----West----</option>
+				<option value="#UNM OR #lobos OR #LBSU OR #49ers">New Mexico v. Long Beach State</option>
+				<option value="#Louisville OR #Cardinals OR #Davidson OR #Wildcats">Louisville v. Davidson</option>
+				<option value="#MURR OR #racers OR #CSU OR #Rams">Murray State v. Colorado State</option>
+				<option value="#Marquette OR #goldeneagles OR #BYU OR #Cougars">Marquette v. BYU</option>
+				<option value="none">----East----</option>
+				<option value="#Syracuse OR #orange OR #UNCA OR #Bulldogs">Syracuse v. UNC Asheville</option>
+				<option value="#KSU OR #wildcats OR #SouthernMiss OR #GoldenEagles">Kansas State v. Southern Miss</option>
+				<option value="#Vanderbilt OR #Commodores OR #Harvard OR #Crimson">Vanderbilt v. Harvard</option>
+				<option value="#Wisconsin OR #badgers OR #Montana OR #Grizzlies">Wisconsin v. Montana</option>
+				<option value="#Gonzaga OR #gozags OR #WVU OR #Mountaineers">Gonzaga v. West Virginia</option>
+				<option value="#OSU OR #buckeyes OR #LoyolaMd OR #greyhounds">Ohio State v. Loyola (MD)</option>
 			</select>
 		</div>
 	</form>
