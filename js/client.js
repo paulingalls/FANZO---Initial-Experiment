@@ -73,7 +73,7 @@ function parseQueryString( aSearchString )
     mySearchTerm = unescape( aSearchString.split( "=" )[1] );
     myHashTags = mySearchTerm;
     myHashTags = myHashTags.replace( /OR/gi, "" );
-    myHashTags += " #marchmadness";
+    myHashTags += " #marchmadness #FANZO";
 }
 
 function getLatestTweetsForTerm( aSearchTerm )
