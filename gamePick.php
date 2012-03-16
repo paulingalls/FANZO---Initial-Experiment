@@ -82,24 +82,25 @@ else
 				style="width: 300px">
 				<option value="none">Pick from this list for 3/15</option>
 				<option value="none">----South----</option>
-				<option value="#UK OR #Kentucky OR #WKU OR #hilltoppers">Kentucky v. Western Kentucky</option>
-				<option value="#ISU OR #cyclones OR #uconn OR #connecticut">Iowa State v. Connecticut</option>
-				<option value="#Wichita OR #shockers OR #VCU OR #rams">Wichita State v. VCU</option>
-				<option value="#IU OR #hoosiers OR #NMSU OR #aggies">Indiana v. New Mexico State</option>
-				<option value="#UNLV OR #rebels OR #Colorado OR #Buffaloes">UNLV v. Colorado</option>
-				<option value="#Baylor OR #bears OR #SDST OR #Jackrabbits">Baylor v. South Dakota State</option>
+				<option value="#NDMBB OR #goirish OR #xavier OR #muskateers">Notre Dame v. Xavier - 9:45</option>
+				<option value="#DUKE OR #BlueDevils OR #Lehigh OR #mountainhawks">Duke v. Lehigh - 7:15</option>
 				<option value="none">----West----</option>
-				<option value="#UNM OR #lobos OR #LBSU OR #49ers">New Mexico v. Long Beach State</option>
-				<option value="#Louisville OR #Cardinals OR #Davidson OR #Wildcats">Louisville v. Davidson</option>
-				<option value="#MURR OR #racers OR #CSU OR #Rams">Murray State v. Colorado State</option>
-				<option value="#Marquette OR #goldeneagles OR #BYU OR #Cougars">Marquette v. BYU</option>
+				<option value="#MSU OR #spartans OR #LIU OR #blackbirds">Michigan State v. LIU Brooklyn - 9:20</option>
+				<option value="#Memphis OR #Tigers OR #stlouis OR #billikens">Memphis v. St. Louis - 6:50</option>
+				<option value="#Florida OR #gators OR #uva OR #virginia">Florida v. Virginia - 2:10</option>
+				<option value="#Mizzou OR #missouri OR #Norfolk OR #NORF">Missouri v. Norfolk State - 4:40</option>
 				<option value="none">----East----</option>
-				<option value="#Syracuse OR #orange OR #UNCA OR #Bulldogs">Syracuse v. UNC Asheville</option>
-				<option value="#KSU OR #wildcats OR #SouthernMiss OR #GoldenEagles">Kansas State v. Southern Miss</option>
-				<option value="#Vanderbilt OR #Commodores OR #Harvard OR #Crimson">Vanderbilt v. Harvard</option>
-				<option value="#Wisconsin OR #badgers OR #Montana OR #Grizzlies">Wisconsin v. Montana</option>
-				<option value="#Gonzaga OR #gozags OR #WVU OR #Mountaineers">Gonzaga v. West Virginia</option>
-				<option value="#OSU OR #buckeyes OR #LoyolaMd OR #greyhounds">Ohio State v. Loyola (MD)</option>
+				<option value="#Cincinnati OR #bearcats OR #texas OR #longhorns">Cincinnati v. Texas - 12:15</option>
+				<option value="#FSU OR #seminoles OR #bonaventure OR #bonnies">FLorida State v. St. Bonaventure - 2:45</option>
+				<option value="none">----Midwest----</option>
+				<option value="#UNC OR #tarheels OR #Vermont OR #UVM">North Carolina v. Vermont - 4:10</option>
+				<option value="#Creighton OR #bluejays OR #Alabama OR #tide">Creighton v. Alabama - 1:40</option>
+				<option value="#Temple OR #Owls OR #USF OR #bulls">Temple v. South Florida - 9:50</option>
+				<option value="#Michigan OR #Wolverines OR #Ohio OR #Bobcats">Michigan v. Ohia - 7:20</option>
+				<option value="#SDSU OR #aztecs OR #ncst OR #wolfpack">San Diego State v. NC State - 12:40</option>
+				<option value="#Georgetown OR #hoyas OR #Belmont OR #bruins">Georgetown v. Belmont - 3:10</option>
+				<option value="#stmary OR #gaels OR #Purdue OR #boilers">St. Mary v. Purdue - 7:27</option>
+				<option value="#Kansas OR #Jayhawks OR #Detroit OR #Titans">Kansas v. Detroit - 9:57</option>
 			</select>
 		</div>
 	</form>
