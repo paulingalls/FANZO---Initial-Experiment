@@ -80,27 +80,15 @@ else
 		<div class="control-group">
 			<label class="control-label" for="gamePicker">Pick a game to join the conversation:</label> <select id="gamePicker"
 				style="width: 300px">
-				<option value="none">Pick from this list for 3/15</option>
-				<option value="none">----South----</option>
-				<option value="#NDMBB OR #goirish OR #xavier OR #muskateers">Notre Dame v. Xavier - 9:45</option>
-				<option value="#DUKE OR #BlueDevils OR #Lehigh OR #mountainhawks">Duke v. Lehigh - 7:15</option>
-				<option value="none">----West----</option>
-				<option value="#MSU OR #spartans OR #LIU OR #blackbirds">Michigan State v. LIU Brooklyn - 9:20</option>
-				<option value="#Memphis OR #Tigers OR #stlouis OR #billikens">Memphis v. St. Louis - 6:50</option>
-				<option value="#Florida OR #gators OR #uva OR #virginia">Florida v. Virginia - 2:10</option>
-				<option value="#Mizzou OR #missouri OR #Norfolk OR #NORF">Missouri v. Norfolk State - 4:40</option>
-				<option value="none">----East----</option>
-				<option value="#Cincinnati OR #bearcats OR #texas OR #longhorns">Cincinnati v. Texas - 12:15</option>
-				<option value="#FSU OR #seminoles OR #bonaventure OR #bonnies">FLorida State v. St. Bonaventure - 2:45</option>
-				<option value="none">----Midwest----</option>
-				<option value="#UNC OR #tarheels OR #Vermont OR #UVM">North Carolina v. Vermont - 4:10</option>
-				<option value="#Creighton OR #bluejays OR #Alabama OR #tide">Creighton v. Alabama - 1:40</option>
-				<option value="#Temple OR #Owls OR #USF OR #bulls">Temple v. South Florida - 9:50</option>
-				<option value="#Michigan OR #Wolverines OR #Ohio OR #Bobcats">Michigan v. Ohia - 7:20</option>
-				<option value="#SDSU OR #aztecs OR #ncst OR #wolfpack">San Diego State v. NC State - 12:40</option>
-				<option value="#Georgetown OR #hoyas OR #Belmont OR #bruins">Georgetown v. Belmont - 3:10</option>
-				<option value="#stmary OR #gaels OR #Purdue OR #boilers">St. Mary v. Purdue - 7:27</option>
-				<option value="#Kansas OR #Jayhawks OR #Detroit OR #Titans">Kansas v. Detroit - 9:57</option>
+				<option value="none">Pick from this list for 3/17</option>
+				<option value="#KansasState OR #KSU OR #Syracuse OR #Orange">Kansas St. vs. Syracuse	12:15 p.m. CBS</option>
+				<option value="#Gonzaga OR #gozags OR #OSU OR #Buckeyes">Gonzaga vs. Ohio St. 2:45 p.m. CBS</option>
+				<option value="#murray OR #racers OR #marquette OR #goldeneagles">Murray St. vs. Marquette 5:15 p.m. CBS</option>
+				<option value="#Vanderbilt OR #Commodores OR #Wisconsin OR #Badgers">Vanderbilt vs. Wisconsin 6:10 p.m. TNT</option>
+				<option value="#VCU OR #Rams OR #Indiana OR #Hoosiers">VCU vs. Indiana 7:10 p.m. tbs</option>
+				<option value="#ISU OR #cyclones OR #Kentucky OR #UK">Iowa St. vs. Kentucky 7:45 p.m. CBS</option>
+				<option value="#Colorado OR #Buffaloes OR #Baylor OR #Bears">Colorado vs. Baylor 8:40 p.m. TNT</option>
+				<option value="#UNM OR #lobos OR #louisville OR #cardinals">New Mexico vs. Louisville 9:40 p.m. tbs</option>
 			</select>
 		</div>
 	</form>
