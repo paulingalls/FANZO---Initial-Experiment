@@ -80,15 +80,11 @@ else
 		<div class="control-group">
 			<label class="control-label" for="gamePicker">Pick a game to join the conversation:</label> <select id="gamePicker"
 				style="width: 300px">
-				<option value="none">Pick from this list for 3/17</option>
-				<option value="#KansasState OR #KSU OR #Syracuse OR #Orange">Kansas St. vs. Syracuse	12:15 p.m. CBS</option>
-				<option value="#Gonzaga OR #gozags OR #OSU OR #Buckeyes">Gonzaga vs. Ohio St. 2:45 p.m. CBS</option>
-				<option value="#murray OR #racers OR #marquette OR #goldeneagles">Murray St. vs. Marquette 5:15 p.m. CBS</option>
-				<option value="#Vanderbilt OR #Commodores OR #Wisconsin OR #Badgers">Vanderbilt vs. Wisconsin 6:10 p.m. TNT</option>
-				<option value="#VCU OR #Rams OR #Indiana OR #Hoosiers">VCU vs. Indiana 7:10 p.m. tbs</option>
-				<option value="#ISU OR #cyclones OR #Kentucky OR #UK">Iowa St. vs. Kentucky 7:45 p.m. CBS</option>
-				<option value="#Colorado OR #Buffaloes OR #Baylor OR #Bears">Colorado vs. Baylor 8:40 p.m. TNT</option>
-				<option value="#UNM OR #lobos OR #louisville OR #cardinals">New Mexico vs. Louisville 9:40 p.m. tbs</option>
+				<option value="none">Pick from this list for 3/22</option>
+				<option value="#Wisconsin OR #Badgers OR #Syracuse OR #Orange">Wisconsin vs. Syracuse 3:15 p.m. PT - CBS</option>
+				<option value="#louisville OR #cardinals OR #MSU OR #Spartans">Louisville vs. Michigan St. 4:47 p.m. PT - tbs</option>
+				<option value="#Cincinnati OR #bearcats OR #OSU OR #Buckeyes">Cincinnati vs. Ohio State	6:45 p.m. PT - CBS</option>
+				<option value="#Florida OR #Gators OR #marquette OR #goldeneagles">Florida vs. Marquette 7:17 p.m. PT -	tbs</option>
 			</select>
 		</div>
 	</form>
