@@ -80,11 +80,11 @@ else
 		<div class="control-group">
 			<label class="control-label" for="gamePicker">Pick a game to join the conversation:</label> <select id="gamePicker"
 				style="width: 300px">
-				<option value="none">Pick from this list for 3/22</option>
-				<option value="#Wisconsin OR #Badgers OR #Syracuse OR #Orange">Wisconsin vs. Syracuse 3:15 p.m. PT - CBS</option>
-				<option value="#louisville OR #cardinals OR #MSU OR #Spartans">Louisville vs. Michigan St. 4:47 p.m. PT - tbs</option>
-				<option value="#Cincinnati OR #bearcats OR #OSU OR #Buckeyes">Cincinnati vs. Ohio State	6:45 p.m. PT - CBS</option>
-				<option value="#Florida OR #Gators OR #marquette OR #goldeneagles">Florida vs. Marquette 7:17 p.m. PT -	tbs</option>
+				<option value="none">Pick from this list for 3/23</option>
+				<option value="#Xavier OR #musketeers OR #Baylor OR #Bears">Xavier vs. Baylor 4:15 p.m. PT CBS</option>
+				<option value="#Ohio OR #bobcats OR #UNC OR #tarheels">Ohio vs. North Carolina 4:47 p.m. PT tbs</option>
+				<option value="#Indiana OR #Hoosiers OR #UK OR #Kentucky">Indiana vs. Kentucky 6:45 p.m. PT CBS</option>
+				<option value="#NCST OR #Badgers OR #KU OR #jayhawks">North Carolina St. vs. Kansas 7:17 p.m. PT tbs</option>
 			</select>
 		</div>
 	</form>
