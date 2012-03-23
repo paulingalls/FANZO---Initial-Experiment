@@ -84,7 +84,7 @@ else
 				<option value="#Xavier OR #musketeers OR #Baylor OR #Bears">Xavier vs. Baylor 4:15 p.m. PT CBS</option>
 				<option value="#Ohio OR #bobcats OR #UNC OR #tarheels">Ohio vs. North Carolina 4:47 p.m. PT tbs</option>
 				<option value="#Indiana OR #Hoosiers OR #UK OR #Kentucky">Indiana vs. Kentucky 6:45 p.m. PT CBS</option>
-				<option value="#NCST OR #Badgers OR #KU OR #jayhawks">North Carolina St. vs. Kansas 7:17 p.m. PT tbs</option>
+				<option value="#NCST OR #wolfpack OR #KU OR #jayhawks">North Carolina St. vs. Kansas 7:17 p.m. PT tbs</option>
 			</select>
 		</div>
 	</form>
