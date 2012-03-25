@@ -80,9 +80,9 @@ else
 		<div class="control-group">
 			<label class="control-label" for="gamePicker">Pick a game to join the conversation:</label> 
 			<select id="gamePicker"	style="width: 300px">
-				<option value="none">Pick from this list for 3/24</option>
-				<option value="#Florida OR #Gators OR #Louisville OR #Cardinals">Florida vs. Louisville 1:30 p.m. PT CBS</option>
-				<option value="#OSU OR #Buckeyes OR #Syracuse OR #Orange">Ohio St. vs. Syracuse 4:05 p.m. PT CBS</option>
+				<option value="none">Pick from this list for 3/25</option>
+				<option value="#Baylor OR #Bears OR #UK OR #Kentucky">Baylor vs. Kentucky 11:20 a.m. PT CBS</option>
+				<option value="#Kansas OR #jayhawks OR #UNC OR #tarheels">Kansas vs. North Carolina 2:05 p.m. PT CBS</option>
 			</select>
 		</div>
 	</form>
