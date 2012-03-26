@@ -1,39 +1,15 @@
-Facebook/Heroku sample app -- PHP
-=================================
+FANZO - initial experiment
 
-This is a sample app showing use of the Facebook Graph API, written in PHP, designed for deployment to [Heroku](http://www.heroku.com/).
+On the surface this is a simple website that allows users to head off to launch rocket to signup to hear more about FANZO.
 
-Run locally
------------
+BUT, underneath this is a hacked up version of the heroku php facebook app that's been modified to work with twitter.  
+At this point the facebook stuff is still there in case we want to experiment with it at a later date.
 
-Configure Apache with a `VirtualHost` that points to the location of this code checkout on your system.
+The purpose of this experiment was to play with what it felt like to watch the twitter stream for a specific game, 
+as identified by the team hashtags.  Pick a game, watch the stream.  Cool?
 
-[Create an app on Facebook](https://developers.facebook.com/apps) and set the Website URL to your local VirtualHost.
+It also incorporates some simple random tweet generation code based on a few user interactions.  If it only takes a
+few clicks/touches will more people tweet during the game?
 
-Copy the App ID and Secret from the Facebook app settings page into your `VirtualHost` config, something like:
-
-    <VirtualHost *:80>
-        DocumentRoot /Users/adam/Sites/myapp
-        ServerName myapp.localhost
-        SetEnv FACEBOOK_APP_ID 12345
-        SetEnv FACEBOOK_SECRET abcde
-    </VirtualHost>
-
-Restart Apache, and you should be able to visit your app at its local URL.
-
-Deploy to Heroku via Facebook integration
------------------------------------------
-
-The easiest way to deploy is to create an app on Facebook and click Cloud Services -> Get Started, then choose PHP from the dropdown.  You can then `git clone` the resulting app from Heroku.
-
-Deploy to Heroku directly
--------------------------
-
-If you prefer to deploy yourself, push this code to a new Heroku app on the Cedar stack, then copy the App ID and Secret into your config vars:
-
-    heroku create --stack cedar
-    git push heroku master
-    heroku config:add FACEBOOK_APP_ID=12345 FACEBOOK_SECRET=abcde
-
-Enter the URL for your Heroku app into the Website URL section of the Facebook app settings page, hen you can visit your app on the web.
+Those were two of the first hypothesis we wanted to test.  The test ran during the NCAA tourney in 2012.
 
