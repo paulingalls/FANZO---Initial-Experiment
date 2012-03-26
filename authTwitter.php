@@ -1,12 +1,13 @@
 <?php
 
+require_once('AppInfo.php');
 require_once('utils.php');
 require_once('sdks/twitter/tmhOAuth.php');
 require_once('sdks/twitter/tmhUtilities.php');
 
 $here = tmhUtilities::php_self( );
-$tmhOAuth = new tmhOAuth( array( 'consumer_key' => '66L5OnWNiQX8ziw0ABBnJg', 
-								 'consumer_secret' => 'dSyFNwpJzBCpVOrNjT5BCJpbAU1K26xygHEac8Gscc', ) );
+$tmhOAuth = new tmhOAuth( array( 'consumer_key' => AppInfo::twitterConsumerKey(), 
+								 'consumer_secret' => AppInfo::twitterConsumerSecret(), ) );
 
 session_start( );
 

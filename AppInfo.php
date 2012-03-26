@@ -29,6 +29,14 @@ class AppInfo {
   public static function appSecret() {
     return getenv('FACEBOOK_SECRET');
   }
+  
+  public static function twitterConsumerKey() {
+  	return getenv('TWITTER_CONSUMER_KEY');
+  }
+  
+  public static function twitterConsumerSecret() {
+  	return getenv('TWITTER_CONSUMER_SECRET');
+  }
 
   /**
    * @return the url
