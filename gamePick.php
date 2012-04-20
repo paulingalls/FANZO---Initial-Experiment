@@ -82,7 +82,7 @@ else
 			<label class="control-label" for="gamePicker">Pick a game to join the conversation:</label> 
 			<select id="gamePicker"	style="width: 300px">
 				<option value="none">Pick from this list for 4/2</option>
-				<option value="#Kansas OR #jayhawks OR #UK OR #Kentucky">Kansas vs. Kentucky 6:23 p.m. PT CBS</option>
+				<option value="#goirish OR #bluegold OR #notredame">Notre Dame Blue/Gold game 1:30pm ET</option>
 			</select>
 		</div>
 	</form>
